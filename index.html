@@ -63,9 +63,118 @@
 
         <!-- CUSTOMIZE: Celebration message -->
         <div class="celebration hidden" id="celebration">
-            <h2 id="celebrationTitle"></h2>
-            <p class="celebration-text" id="celebrationMessage"></p>
-            <p class="celebration-text" id="celebrationEmojis"></p>
+            <!-- Decorative Bow -->
+            <div class="ticket-bow">
+                <svg width="80" height="50" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 30C50 30 30 10 15 15C0 20 10 45 50 35C90 45 100 20 85 15C70 10 50 30 50 30Z" fill="#ff85a1" stroke="#ffafcc" stroke-width="2"/>
+                    <path d="M50 30C50 30 40 50 30 55M50 30C50 30 60 50 70 55" stroke="#ff85a1" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="50" cy="31" r="6" fill="#ff85a1" stroke="#ffafcc" stroke-width="1"/>
+                </svg>
+            </div>
+            
+            <!-- Date Ticket -->
+            <div class="date-ticket">
+                <!-- Inner Border -->
+                <div class="ticket-inner-border"></div>
+                
+                <!-- Ticket Header -->
+                <div class="ticket-header">
+                    <div class="ticket-notch ticket-notch-left"></div>
+                    <div class="ticket-notch ticket-notch-right"></div>
+                    <span class="ticket-subtitle">Exclusive Invitation</span>
+                    <h2 class="ticket-title">Yay! It's a Date!</h2>
+                </div>
+                
+                <!-- Ticket Content -->
+                <div class="ticket-content">
+                    <!-- Heart Watermark -->
+                    <div class="ticket-watermark">
+                        <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- Activity -->
+                    <div class="ticket-row">
+                        <div class="ticket-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3-.5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </div>
+                        <div class="ticket-info">
+                            <span class="ticket-label">ACTIVITY</span>
+                            <p class="ticket-value">Sunset Walk & Dining</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Location -->
+                    <div class="ticket-row">
+                        <div class="ticket-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="ticket-info">
+                            <span class="ticket-label">LOCATION</span>
+                            <p class="ticket-value">Tyler's Butcher & Grill, Umdloti</p>
+                        </div>
+                    </div>
+                    
+                    <!-- DateTime -->
+                    <div class="ticket-row">
+                        <div class="ticket-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div class="ticket-info">
+                            <span class="ticket-label">DATETIME</span>
+                            <p class="ticket-value">Saturday, February 14th — 5:30 PM Pickup</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ticket Footer -->
+                <div class="ticket-footer">
+                    <div class="ticket-barcode">
+                        <div class="barcode-lines">
+                            <div class="barcode-line" style="width: 3px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 0.6"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 3px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 0.6"></div>
+                            <div class="barcode-line" style="width: 3px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 3px; opacity: 0.6"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 3px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 0.6"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 3px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 3px; opacity: 0.6"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 3px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 1"></div>
+                            <div class="barcode-line" style="width: 1px; opacity: 0.6"></div>
+                        </div>
+                        <span class="barcode-text">#VALENTINE-2026</span>
+                    </div>
+                    <div class="ticket-vip">
+                        <div class="vip-text">VIP</div>
+                        <span class="vip-admit">Admit One</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="love-message">I love you! ❤️</p>
         </div>
     </div>
 
